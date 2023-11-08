@@ -1,0 +1,16 @@
+<main>
+  <h2 class="title">Index</h2>
+  {{#if products.length}}
+    {{#each products}}
+      <ul>
+        <li>Producto: {{productName}}</li>
+        <li>Descripción: {{description}}</li>
+        <li>Precio: ${{price}}</li>
+        <li>Stock: {{stock}}</li>
+      </ul>
+      <br />
+    {{/each}}
+  {{else}}
+    <p class="no__products">No hay stock disponible</p>
+  {{/if}}
+</main>
